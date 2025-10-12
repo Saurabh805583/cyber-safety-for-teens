@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact / Parental Consent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>✉️ Contact / पालकांचा परवानगी फॉर्म</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tips.html">Tips</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="password.html">Password</a>
+  <a href="phishing.html">Phishing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Parental Consent / पालकांची परवानगी</h2>
+
+<div class="card">
+  <input type="text" id="name" placeholder="Your Name / तुमचं नाव" style="padding:10px; width:80%; border-radius:10px; margin:5px 0;">
+  <input type="text" id="parent" placeholder="Parent Name / पालकांचं नाव" style="padding:10px; width:80%; border-radius:10px; margin:5px 0;">
+  <input type="email" id="email" placeholder="Parent Email / पालकांचा ईमेल" style="padding:10px; width:80%; border-radius:10px; margin:5px 0;">
+  <button onclick="saveConsent()">Submit / सबमिट करा</button>
+  <p id="msg" style="margin-top:10px; font-weight:bold;"></p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2025 Cyber Safety for Teens</p>
+<p class="creator">Made with 💙 by Saurabh Vijay Ingle</p>
+</footer>
+
+<script>
+function saveConsent() {
+  const
