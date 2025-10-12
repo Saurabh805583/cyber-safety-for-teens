@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Safety for Teens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🔐 Cyber Safety for Teens</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tips.html">Tips</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="password.html">Password</a>
+  <a href="phishing.html">Phishing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section id="hero">
+  <h2>Welcome! स्वागत आहे!</h2>
+  <p>
+    Internet is fun, पण सुरक्षित राहणं खूप महत्त्वाचं आहे.  
+    या साइटवर तुम्ही शिकाल 💻:  
+    - Strong passwords बनवायला  
+    - Scams ओळखायला  
+    - Social media सुरक्षित वापरायला
+  </p>
+  <div class="card">
+    <h3>💡 Daily Cyber Tip / रोजचं Cyber Tip</h3>
+    <p id="dailyTip">Loading tip...</p>
+    <button onclick="newTip()">Show Another Tip</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Cyber Safety for Teens</p>
+  <p class="creator">Made with 💙 by Saurabh Vijay Ingle</p>
+</footer>
+
+<script>
+const tips = [
+  "Never share passwords with anyone. कुणासोबतही पासवर्ड शेअर करू नका.",
+  "Think before you click on unknown links. अनोळखी links वर click करण्याआधी विचार करा.",
+  "Use strong and unique passwords. मजबूत आणि unique पासवर्ड वापरा.",
+  "Don't share personal info on social media. Social media वर personal info शेअर करू नका.",
+  "Always log out from public computers. सार्वजनिक computers वर logout करा."
+];
+
+const dailyTip = document.getElementById('dailyTip');
+
+function newTip() {
+  const index = Math.floor(Math.random() * tips.length);
+  dailyTip.innerText = tips[index];
+}
+
+// Show one tip on page load
+newTip();
+</script>
+
+</body>
+  </html>
