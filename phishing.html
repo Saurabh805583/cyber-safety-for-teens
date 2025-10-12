@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>⚠️ Phishing Demo</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tips.html">Tips</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="password.html">Password</a>
+  <a href="phishing.html">Phishing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Safe vs Unsafe Links / सुरक्षित व असुरक्षित लिंक</h2>
+
+<div class="card">
+  <p>Click on a link below and learn if it is safe or not. / खालील लिंकवर click करा आणि पहा सुरक्षित आहे की नाही.</p>
+  <button onclick="checkLink('safe')">https://officialsite.com ✅</button>
+  <button onclick="checkLink('unsafe')">http://free-prizes.com ❌</button>
+  <p id="result" style="margin-top:10px; font-weight:bold;"></p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2025 Cyber Safety for Teens</p>
+<p class="creator">Made with 💙 by Saurabh Vijay Ingle</p>
+</footer>
+
+<script>
+function checkLink(status) {
+  if(status === 'safe') {
+    document.getElementById('result').innerText = "This link is safe! ✅ / सुरक्षित लिंक!";
+  } else {
+    document.getElementById('result').innerText = "This is a phishing/unsafe link! ❌ / असुरक्षित लिंक!";
+  }
+}
+</script>
+
+</body>
+</html>
