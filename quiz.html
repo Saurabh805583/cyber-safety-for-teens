@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Safety Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>🔐 Cyber Safety Quiz</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tips.html">Tips</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="password.html">Password</a>
+  <a href="phishing.html">Phishing</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Quiz Time! / क्विझ वेळ</h2>
+
+<div class="card">
+  <p>1️⃣ What should you do with passwords? / पासवर्डसह काय करावे?</p>
+  <button onclick="checkAnswer(this,'wrong')">Share with friends / मित्रांसोबत शेअर करा</button>
+  <button onclick="checkAnswer(this,'right')">Keep secret & strong / गुप्त आणि मजबूत ठेवा</button>
+</div>
+
+<div class="card">
+  <p>2️⃣ What to do on social media? / सोशल मीडियावर काय करावे?</p>
+  <button onclick="checkAnswer(this,'right')">Think before posting / पोस्ट करण्याआधी विचार करा</button>
+  <button onclick="checkAnswer(this,'wrong')">Share all info / सर्व माहिती शेअर करा</button>
+</div>
+
+<p id="score" style="margin-top:15px; font-weight:bold;"></p>
+
+</section>
+
+<footer>
+<p>© 2025 Cyber Safety for Teens</p>
+<p class="creator">Made with 💙 by Saurabh Vijay Ingle</p>
+</footer>
+
+<script>
+let score = 0;
+
+function checkAnswer(btn, status) {
+  if(status === 'right') {
+    alert('Correct! ✅ / बरोबर!');
+    score++;
+  } else {
+    alert('Oops! ❌ / चुकीचं!');
+  }
+  document.getElementById('score').innerText = 'Score / गुण: ' + score;
+  btn.disabled = true;
+}
+</script>
+
+</body>
+</html>
